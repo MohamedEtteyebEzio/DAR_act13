@@ -1,4 +1,4 @@
-package Client;
+package clientServer1_1_2_3;
 
 import java.io.InputStream; 
 import java.io.OutputStream; 
@@ -13,9 +13,8 @@ import java.util.Scanner;
            int rep, choice = 0; 
            System.out.println("I am a client not yet connected ... "); 
  
-           InetAddress serverInetAddress = InetAddress.getByName("192.168.56.1"); 
-           InetSocketAddress serverSocketAddress = new 
-           InetSocketAddress(serverInetAddress, 1234); 
+           InetAddress serverInetAddress = InetAddress.getByName("192.168.1.216"); 
+           InetSocketAddress serverSocketAddress = new InetSocketAddress(serverInetAddress, 1243); 
  
            Socket socket = new Socket(); 
            socket.connect(serverSocketAddress); 

@@ -1,4 +1,4 @@
-package Server;
+package clientServer1_1_2_3;
 
 
 import java.io.InputStream;
@@ -8,7 +8,7 @@ import java.net.Socket;
  class Server { 
 public static void main (String[] args) { 
 try { 
-         ServerSocket serverSocket = new ServerSocket(1234); 
+         ServerSocket serverSocket = new ServerSocket(1243); 
          System.out.println("I am a server waiting for a client connexion..."); 
          Socket socket = serverSocket.accept(); 
          
